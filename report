@@ -1,1 +1,65 @@
+# Task 2 – Network Security Analysis
 
+## Objective
+
+The objective of this task was to perform defensive network traffic analysis using Wireshark in a controlled lab environment.
+
+## Tools Used
+
+- Kali Linux
+- Wireshark
+- Network diagnostic tools
+- Git and GitHub
+
+## Lab Environment
+
+The network traffic was captured from a controlled Kali Linux environment using the `eth0` interface.
+
+## Analysis Performed
+
+The captured traffic was analyzed to identify:
+
+- Network protocols
+- DNS queries and responses
+- TCP communication
+- TLS encrypted traffic
+- ICMP/ICMPv6 traffic
+- ARP activity
+- Communication patterns and potential security concerns
+
+## Key Observations
+
+The capture contained IPv4 and IPv6 communication along with TCP, UDP, DNS, TLS, ICMPv6 and ARP traffic.
+
+A total of 64 packets were observed in the captured sample.
+
+TLS traffic was observed during HTTPS communication, while DNS traffic was observed during domain-name resolution.
+
+## Security Considerations
+
+No confirmed malicious activity was identified in the limited controlled lab capture.
+
+The analysis demonstrated the importance of monitoring DNS requests, connection patterns, encrypted traffic and unexpected network communication.
+
+## Defensive Recommendations
+
+- Monitor unusual DNS requests.
+- Investigate unexpected destinations and repeated connection attempts.
+- Prefer encrypted protocols such as HTTPS/TLS.
+- Use firewall and IDS/IPS monitoring.
+- Keep systems and security software updated.
+- Perform additional packet captures when investigating suspected anomalies.
+
+## Screenshots
+
+The Wireshark analysis screenshots are available in the `screenshots` directory.
+
+## Report
+
+The complete analysis is documented in:
+
+`Network_Security_Analysis_Report.pdf`
+
+## Conclusion
+
+This task provided practical experience in packet capture, protocol identification, network traffic analysis and defensive security monitoring using Wireshark.
